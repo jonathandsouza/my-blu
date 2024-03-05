@@ -7,9 +7,19 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      t: "768px",
+      sd: "1024px",
+      ld: "1366px",
+      xld: "1280px",
+    },
     colors: {
-      primary: "rgb(var(--branding-primmary)/ <alpha-value>)",
+      primary: "rgb(var(--branding-primary)/ <alpha-value>)",
       secondary: "rgb(var(--branding-secondary)/ <alpha-value>)",
+    },
+    container: {
+      padding: "1.5rem", // 15px
+      center: true,
     },
     extend: {
       backgroundImage: {
